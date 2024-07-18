@@ -55,7 +55,7 @@ class ProductSeeder extends Seeder
                 'name' => $name,
                 'slug' => Str::slug($name) . '-' . Str::random(8),
                 'sku' => Str::random(8) . $i,
-                'img_thumbnail' => 'https://canifa.com/img/1000/1500/resize/6/o/6ot24s002-sb001-1.webp',
+                'img_thumbnail' => 'https://canifa.com/img/1517/2000/resize/8/t/8tp24s006-sw001-thumb.webp',
                 'price_regular' => 600000,
                 'price_sale' => 499000,
             ]);
@@ -65,11 +65,11 @@ class ProductSeeder extends Seeder
             ProductGallery::query()->insert([
                 [
                     'product_id' => $i,
-                    'image' => 'https://canifa.com/img/1000/1500/resize/6/o/6ot24s002-sb001-1.webp',
+                    'image' => 'https://canifa.com/img/1517/2000/resize/8/t/8tp24s006-sw001-thumb.webp',
                 ],
                 [
                     'product_id' => $i,
-                    'image' => 'https://canifa.com/img/1000/1500/resize/6/o/6ot24s002-sb001-l-1-u.webp',
+                    'image' => 'https://canifa.com/img/1517/2000/resize/8/t/8tp24s006-sw001-thumb.webp',
                 ],
             ]);
         }
@@ -96,7 +96,7 @@ class ProductSeeder extends Seeder
                         'product_size_id' => $sizeID,
                         'product_color_id' => $colorID,
                         'quatity' => 100,
-                        'image' => 'https://canifa.com/img/1000/1500/resize/6/o/6ot24s002-sb001-l-1-u.webp',
+                        'image' => 'https://canifa.com/img/1517/2000/resize/8/t/8tp24s006-sw001-thumb.webp',
                     ];
                 }
             }
