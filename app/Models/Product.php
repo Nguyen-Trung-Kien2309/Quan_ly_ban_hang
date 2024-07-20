@@ -10,7 +10,7 @@ class Product extends Model
     use HasFactory;
 
     protected $fillable = [
-        'catelogue_id',
+        'catalogue_id',
         'name',
         'slug',
         'sku',
@@ -37,7 +37,7 @@ class Product extends Model
         'is_show_home' => 'boolean',
     ];
 
-    public function catelogue()
+    public function catalogue()
     {
         return $this->belongsTo(Catalogue::class);
     }

@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $products = \App\Models\Product::query()->latest('id')->limit(4)->get();
+    $products = \App\Models\Product::query()->latest('id')->limit(20)->get();
 
     return view('welcome', compact('products'));
 })->name('welcome');
